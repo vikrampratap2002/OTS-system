@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'theme.css' %}">
+    <link rel="stylesheet" href="{% static 'formstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'buttonstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'firststyle.css' %}">
+    <link rel="stylesheet" href="{% static 'para.css' %}">
+</head>
+<body>
+    <div class="top">
+        <div class="sitename"><h1>Online Testing System</h1></div>
+        <div class="menu">{% block top %} {% endblock %}</div>
+    </div>
+<div class="img1">
+    <div class="content"> 
+        {% block content %}{% endblock %}
+    </div>
+</div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Term of Services</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your address" id="footer-email">
+                <input type="submit" value="Sing Up" id="footer-email-btn">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

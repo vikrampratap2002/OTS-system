@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block title %} Welcome to online Testing System {% endblock %}
+{% block top %}
+<a href="{% url 'OTS:registrationForm' %}">Signup</a>
+<a href="{% url 'OTS:login' %}">Login</a>
+{% endblock %}
+{% block content %}
+<h1>Welcome to Online Testing System - Your Gateway to Excellence!</h1>
+<p>Online Testing System is a state-of-the-art online testing system designed to revolutionize the way you assess and enhance your knowledge. Whether you're a student preparing for exams, an educator aiming to streamline assessments, or a professional seeking skill validation, we have the tools and resources to elevate your journey to success.</p>
+<div class="para"><h2>Key Features:</h2>
+<p>✨ Adaptive Testing Technology</p>
+<p>🔒 Secure and Reliable</p>
+<p>🚀 User-Friendly Interface</p>
+<p>🌈 Versatile Question Bank</p>
+<p>📊 Comprehensive Analytics</p>
+<p>👩‍🏫 Educator-Friendly Tools</p>
+<p>🌐 Global Accessibility</p>
+</div>
+
+<div class="first-style">
+    <a href="{% url 'OTS:registrationForm' %}">Sign Up</a>
+
+    <a href="{% url 'OTS:login' %}">Login</a>
+</div>
+
+{% endblock %}
